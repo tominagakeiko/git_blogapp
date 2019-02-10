@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blogapp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <title>BlogApp</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-
   <body>
+    <div class = "header">
+      <div class = "header-logo">BlogApp</div>
+      <div class = "header-login">
+        <ul>
+          <li>ログアウト</li>
+          <li>投稿する</li>
+        </ul>
+        
+      </div>
+      <!--<div class = "header-logout">-->
+      <!--  <ul>-->
+      <!--    <li>ログイン</li>-->
+      <!--  </ul>-->
+      <!--  </div>-->
+    </div>
+
     <%= yield %>
+
+    <div class ="footer">
+       <p>
+        Copyright blogapp 2019.
+      </p>
+    </div>
+    
   </body>
 </html>
